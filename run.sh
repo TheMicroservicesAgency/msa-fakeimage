@@ -32,4 +32,4 @@ ps aux | grep [n]ginx
 
 echo " "
 echo " * Starting Ruby app ..."
-ruby app.rb -p 8080 2>> /dev/stderr 1>> /dev/stdout
+ruby fakeimage.rb -p 8080 2>> /dev/stderr 1>> /dev/stdout

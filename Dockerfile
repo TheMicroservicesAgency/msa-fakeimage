@@ -15,6 +15,9 @@ RUN apk add --update freetype-dev libpng-dev libjpeg-turbo-dev libxml2-dev autoc
 ADD README.md NAME LICENSE VERSION /opt/ms/
 ADD swagger.json /opt/swagger/swagger.json
 
+# Override the Nginx configuration
+COPY nginx.conf /etc/nginx/nginx.conf
+
 # Copy all the other application files to /opt/app
 ADD run.sh /opt/ms/
 

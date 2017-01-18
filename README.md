@@ -21,18 +21,19 @@ To get a png image of dimensions 850x50, just specify the size (width x height) 
 
 ![Example 1](http://demo.microservices.agency:9905/fakeimage/850x100)
 
-Specify the background color with the color parameter, specify either a color name (the full list is available on the [imagemagick website](http://www.imagemagick.org/script/color.php#color_names)) or a hex code starting with ! instead of # :
+Specify the background color with the `color` parameter, specify either a color name (the full list is available on the [imagemagick ](http://www.imagemagick.org/script/color.php#color_names) website) :
 
 [/fakeimage/850x100.png?color=DeepSkyBlue](/fakeimage/850x100.png?color=DeepSkyBlue)
 
 ![Example 2](http://demo.microservices.agency:9905/fakeimage/850x100.png?color=DeepSkyBlue)
 
+Or you can use a hex code, starting with `!` instead of `#` :
+
 [/fakeimage/50x500.jpg?color=!4bfc57](fakeimage/850x100.jpg?color=!4bfc57)
 
 ![Example 3](http://demo.microservices.agency:9905/fakeimage/850x100.jpg?color=!4bfc57)
 
-
-You can also change the text color with the textcolor parameter :
+You can also change the text color with the `textcolor` parameter :
 
 [/fakeimage/850x100.jpg?color=black&textcolor=!43ff00](/fakeimage/850x100.jpg?color=black&textcolor=!43ff00)
 

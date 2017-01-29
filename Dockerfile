@@ -1,4 +1,4 @@
-FROM msagency/msa-image-ruby:latest
+FROM msagency/msa-image-ruby:1.0.2
 
 # Install the Ruby dependencies
 ADD Gemfile /opt/ms/
